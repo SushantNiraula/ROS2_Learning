@@ -1,0 +1,32 @@
+[1.384s] Invoking command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_py_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build install --record /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[1.745s] running egg_info
+[1.746s] creating ../../build/my_py_pkg/my_py_pkg.egg-info
+[1.772s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[1.773s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[1.774s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[1.774s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[1.774s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.829s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.830s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.830s] running build
+[1.830s] running build_py
+[1.830s] creating /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build
+[1.830s] creating /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build/lib
+[1.830s] creating /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[1.831s] copying my_py_pkg/__init__.py -> /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[1.831s] running install
+[1.839s] running install_lib
+[1.866s] creating /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[1.866s] copying /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[1.867s] byte-compiling /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/__init__.py to __init__.cpython-312.pyc
+[1.867s] running install_data
+[1.867s] creating /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/share/ament_index
+[1.868s] creating /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/share/ament_index/resource_index
+[1.868s] creating /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[1.868s] copying resource/my_py_pkg -> /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[1.868s] copying package.xml -> /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[1.869s] running install_egg_info
+[1.900s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg-0.0.0-py3.12.egg-info
+[1.901s] running install_scripts
+[2.093s] writing list of installed files to '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/install.log'
+[2.136s] Invoked command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_py_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build install --record /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
