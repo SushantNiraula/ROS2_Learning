@@ -1,0 +1,25 @@
+[0.013s] Invoking command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg -- -j8 -l8
+[0.054s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.367s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.436s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.453s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.476s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.503s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.615s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.619s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.735s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.844s] [31mCMake Error at CMakeLists.txt:13 (add_executable):
+[0.844s]   The target name "(" is reserved or not valid for certain CMake features,
+[0.844s]   such as generator expressions, and may result in undefined behavior.
+[0.844s] 
+[0.844s] [0m
+[0.844s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.845s]   ament_target_dependencies() the passed package name 'cpp_node_oop' was not
+[0.845s]   found before
+[0.845s] Call Stack (most recent call first):
+[0.845s]   CMakeLists.txt:14 (ament_target_dependencies)
+[0.845s] 
+[0.845s] [0m
+[0.845s] -- Configuring incomplete, errors occurred!
+[0.852s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.855s] Invoked command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg -- -j8 -l8

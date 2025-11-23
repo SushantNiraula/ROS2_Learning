@@ -148,4 +148,87 @@ Then add the block of code at the end of bashrc
 
         a. go to ros2_ws/src/my_cpp_pkg/src
         b. touch my_first_node.cp to create a cpp file named as my_first_node
-        c. 
+        c. Write the code in the my_first_node.cpp
+        d. then put into the CMakeLists.txt to make it an executable and mention its dependencies using: 
+            add_executable(cpp_node src/my_first_node.cpp)
+            ament_target_dependencies(cpp_node rclcpp)
+
+            install(
+                TARGETS
+                cpp_node
+                DESTINATION lib/${PROJECT_NAME}
+            )
+        e. Then build, source and run the node.
+
+## OOP Template for Nodes in python and CPP
+
+    ### Python
+        import rclpy
+        from rclpy.node import Node
+
+        class MyNode(Node):
+            def __init__(self):
+                super().__init__('py_test') # Modify the name according to what you want.
+
+        def main(args=None):
+            rclpy.init(args=args)
+            node= MyNode()
+            rclpy.spin(node)
+            rclpy.shutdown()
+
+        if __name__=="__main__":
+            main()
+    
+
+    ### CPP
+        #include "rclcpp/rclcpp.hpp"
+
+        class MyNode: public rclcpp::Node //Modify Name
+        {
+            public:
+                MyNode(): Node("node_name") // Modify name
+                {
+                    
+                    }
+            private:
+        
+        };
+
+        int main(int argc, char **argv){
+            rclcpp::init(argc, argv);
+            auto node = std::make_shared<MyNode>();
+            rclcpp::spin(node);
+            rclcpp::shutdown();
+            return 0;
+        }
+
+-----
+# Introduction to ROS2 Tools we need to use :
+
+### Introspecting your nodes with ros2 cli(Command Line Interference)
+
+1. Check if you have correctly sourced environment. To check use : >> cat .bashrc
+
+    ! Make sure you have sources ros2 and your workspace in bashrc which will automatically source your environments whenever you launch the terminal.
+
+2. >> ros2 !TAB !TAB 
+        to check all the commands we have with ros2 
+        like run, action , launch, node, pkg and many.
+3. ros2 run demo_nodes_cpp talker 
+    ros2 run demo_nodes_cpp listener
+4. ros2 node list # to get the list of all the nodes currently running in your ros2 environment
+5. ros2 node info # to interospect the node and we cannot have two nodes with same name
+
+We discussed that we cannot have two nodes with same name. but how to open two nodes of same function but with differnet name:
+
+6. Rename the node at runtime : To ensure the nodes start with different name than from defualt. For example we have a node to read temperature using temperature sensor. But now we have 10 different sensors and we want all the data then how to do it. We cannot make 10 different nodes with different name. There comes renaming node at runtime. 
+    ![Two nodes with same name
+    ](<Screenshot from 2025-11-23 13-38-23.png>)
+
+to rename:
+
+    >> ros2 run my_py_pkg py_node --ros-args -r __node:=abc1
+    >> ros2 run my_py_pkg py_node --ros-args --remap __node:=abc2
+    Both does same thing
+
+7. Colcon: 
