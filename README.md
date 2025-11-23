@@ -75,3 +75,77 @@ Then add the block of code at the end of bashrc
     after creating the python/cpp package to start working we go inside the package eiter my_py_pkg or my_cpp_pkg and then start working inside to solve our problem. This is an important way to work. 
     >>. code
 5. Then after working and making code ready we must then build our package. <warning ><i>Always be sure to build the packages from ros2_ws/ directory not anywhere else.</i></warning>
+6. Writing my first node i.e py_node and cpp_node . Just a simple node:
+    goto src/my_py_pkg/my_py_pkg and then create a newfile:
+    
+    >>touch my_first_node.py
+
+    then also make the python file executable. 
+
+    >>chmod +x my_first_node.py
+
+    Then get into writing code into your file my_first node. Here we will create one node.
+
+    we can run the node manually using >> python3 my_first_node
+
+    but in real world we don't do it this way. Instead we call from the package:
+
+    to do it:
+    1. Go to setup.py and make some changes as:
+        entry_points={
+        'console_scripts': [
+        ],
+    },
+    2. we make it as:
+        entry_points={
+        'console_scripts': [
+            "py_node = my_py_pkg.my_first_node:main",
+        ],
+    }
+7. To run your node after writing go to workspac i.e ros2_ws and:
+    >> colcon build --packages-select my_py_pkg
+8. Then source the workspace using 
+    >> source ~/.bashrc
+
+    and run the node using:
+
+    >> ros2 run my_py_pkg py_node
+    
+    where py_node is the name of node you created i.e name in setup.py in actual file we have name of node as my_test. So keep that in mind.
+9. We don't want our code to be like that, we want to use industry standard and build node with OOP. Done in my_first_node_oop.py
+
+    Let's see series of steps necessary to start working on a node in ros2:
+
+        a. cd my_py_pkg/my_py_pkg
+        
+        b. touch my_first_node_oop.py
+
+        c. chmod +x my_first_node_oop.py   // This makes the python file executable which is essential for running the file using ros2 run command as we previously did.
+
+        d. Then get into coding using oop the node. Which you can see in file my_first_node_oop.py and add it to setup.py using:
+
+            entry_points={
+            'console_scripts': [
+                "py_node = my_py_pkg.my_first_node:main",
+                "py_node_oop = my_py_pkg.my_first_node_oop:main", //this line is added
+            ],
+            },
+
+        e. After writing the code then build and source the package using :
+
+            >> cd ../../..
+
+            >> colcon build --packages-select my_py_pkg
+
+            >> source ~/.bashrc
+
+        f. Run the node using:
+
+            >> ros2 run my_py_pkg py_node_oop
+
+10. Then learning to write node in cpp.
+    Now we must do it because industry demand ros2 codes in cpp as they are fast t run and very memory efficient. 
+
+        a. go to ros2_ws/src/my_cpp_pkg/src
+        b. touch my_first_node.cp to create a cpp file named as my_first_node
+        c. 

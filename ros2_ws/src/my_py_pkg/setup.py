@@ -24,6 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            "py_node = my_py_pkg.my_first_node:main",
+            "py_node_oop = my_py_pkg.my_first_node_oop:main"
         ],
     },
 )
