@@ -1,0 +1,26 @@
+[1.542s] Invoking command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_py_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build install --record /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[1.907s] running egg_info
+[1.935s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[1.935s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[1.935s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[1.935s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[1.936s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[1.986s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.987s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.987s] running build
+[1.987s] running build_py
+[1.988s] copying my_py_pkg/robot_news_station.py -> /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[1.988s] running install
+[1.995s] running install_lib
+[2.021s] copying /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/robot_news_station.py -> /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[2.022s] byte-compiling /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/robot_news_station.py to robot_news_station.cpython-312.pyc
+[2.022s] running install_data
+[2.023s] running install_egg_info
+[2.051s] removing '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[2.052s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg-0.0.0-py3.12.egg-info
+[2.053s] running install_scripts
+[2.234s] Installing py_node script to /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.235s] Installing py_node_oop script to /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.235s] Installing robot_news_station script to /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.235s] writing list of installed files to '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/install.log'
+[2.274s] Invoked command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_py_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build install --record /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data

@@ -5,7 +5,8 @@ class MyNode(Node):
     def __init__(self):
         super().__init__('py_test')
         self.get_logger().info('Hello World this is node created using OOP')
-        self.create_timer(1.0,self.timer_callback)
+        #create_timer is used to schedule a recurring, time-based event that executes a specific function (a callback) at regular intervals.
+        self.create_timer(1.0,self.timer_callback) 
         self.count_=1
 
     def timer_callback(self):

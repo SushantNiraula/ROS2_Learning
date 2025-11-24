@@ -232,3 +232,214 @@ to rename:
     Both does same thing
 
 7. Colcon: 
+
+Definition: Colcon stands for COmmand Line CONstructor. It is a command-line tool designed to build sets of software packages.s
+
+Purpose: It allows developers to build entire ROS 2 workspaces, which may contain dozens or even hundreds of packages, in a structured and efficient way.
+
+Parallel Builds: By default, colcon builds packages in parallel to speed up compilation. For resource-limited systems (like Raspberry Pi), you can use --executor sequential to build packages one at a time.
+
+Workspace Concept: A colcon workspace is like a warehouse containing multiple ROS 2 projects. You can build, test, and run them together.
+
+Symlink Install: Colcon supports --symlink-install, which makes development faster by avoiding repeated copying of files during builds.Once you build with symlink install we can continue to develop the packages without building again. It will build automatically.(For development phase we use Symlink Install, in production we don't do it.{only for python packages})
+
+⚙️ Common Colcon Commands
+* colcon build → Builds all packages in the workspace.
+
+* colcon test → Runs tests for packages.
+
+* colcon test-result → Shows results of the tests.
+
+* colcon list → Lists all packages in the workspace.
+
+* colcon clean (via plugin) → Cleans build artifacts.
+
+8. RQT and RQTGraph
+
+RQT is a graphical tool suite in ROS 2 that provides plugins for visualizing, debugging, and interacting with your robot system. RQTGraph is one of its plugins, specifically used to visualize the ROS computation graph (nodes and topics) in a clear, interactive diagram.
+
+🖥️ What is RQT?
+Definition: RQT is a Qt-based framework in ROS that offers a collection of GUI tools (plugins) for developers.
+
+Purpose: It makes working with ROS more user-friendly by providing graphical interfaces for tasks that are otherwise done via command line.
+
+Capabilities:
+
+* Visualize topics, parameters, and node connections.
+
+* Plot data in real time (e.g., sensor readings).
+
+* Monitor logs and diagnostics.
+
+* Manage parameters dynamically.
+
+Extensible: Developers can write their own plugins to extend RQT for custom needs
+
+🔗 What is RQTGraph?
+Definition: RQTGraph is a plugin within RQT that shows the ROS graph—the network of nodes and topics in your system.
+
+Visualization:
+
+* Displays all active nodes.
+
+* Shows publishers and subscribers.
+
+* Illustrates how topics connect nodes together.
+
+Use Cases:
+
+* Debugging communication issues (e.g., checking if a node is publishing correctly).
+
+* Understanding system architecture at a glance.
+
+* Teaching and learning ROS concepts visually.
+
+⚙️ Example Workflow
+* Start a ROS 2 system (e.g., turtlesim).
+
+* Run ros2 run rqt_gui rqt_gui to open RQT.
+
+* Select Plugins → Visualization → rqt_graph.
+
+* You’ll see a diagram of nodes (/turtlesim, /teleop_turtle) and topics (/turtle1/cmd_vel, /turtle1/pose).
+
+Let's visualize and apply to what we have learned so far.
+
+>> ros2 run turtlesim turtlesim_node 
+
+Here we are opening turtlesim gui node for now.
+
+>> ros2 run turtlesim turtle_teleop_key
+
+This node will read from the keyboard to move the turtle.
+
+Let's open the turtle sim using our custom name for the node or turtle.
+
+>> ros2 run turtlesim turtlesim_node --ros-args -r node:=my_turtle
+
+### Topics in ROS2.
+📡 What is a Topic?
+A topic is a named bus over which nodes exchange messages.
+
+Nodes can publish messages to a topic, and other nodes can subscribe to that topic to receive those messages.
+
+Topics are anonymous: publishers and subscribers don’t need to know about each other, only the topic name and message type.
+
+🔑 Characteristics of Topics in ROS 2
+* Message-based: Each topic carries messages of a specific type (e.g., std_msgs/msg/String, geometry_msgs/msg/Twist).
+
+* Many-to-many: Multiple publishers can send to the same topic, and multiple subscribers can listen to it.
+
+* Decoupled communication: Nodes don’t directly talk to each other; they only interact via topics.
+
+* Asynchronous: Messages are delivered whenever they are published, not in a request-response manner.
+
+* DDS-backed: ROS 2 uses the Data Distribution Service (DDS) middleware, which provides reliability, QoS (Quality of Service), and discovery for topics.
+
+⚙️ Example
+* Suppose you have a robot with a camera and a navigation system:
+
+* The camera node publishes images on /camera/image_raw.
+
+* The vision node subscribes to /camera/image_raw to process images.
+
+* The navigation node publishes velocity commands on /cmd_vel.
+
+* The motor controller node subscribes to /cmd_vel to move the robot.
+
+\🛠️ Useful Commands
+* ros2 topic list → Lists all active topics.
+
+* ros2 topic echo /topic_name → Prints messages being published on a topic.
+
+* ros2 topic info /topic_name → Shows publishers, subscribers, and message type.
+
+* ros2 topic pub /topic_name msg_type "data" → Publishes a message manually.
+
+### 📡 Publishers in ROS 2
+A publisher is a node that sends messages on a topic.
+
+It creates a communication endpoint and pushes data (like sensor readings, commands, or status updates) into the ROS 2 system.
+
+Example:
+
+a. A camera node publishes images on the topic /camera/image_raw.
+
+b. A laser scanner node publishes distance measurements on /scan.
+
+### 📥 Subscribers in ROS 2
+A subscriber is a node that receives messages from a topic.
+
+It listens to the topic and processes incoming data.
+
+Example:
+
+* A vision node subscribes to /camera/image_raw to process images.
+
+* A navigation node subscribes to /scan to build a map of the environment.
+
+### 🔗 Relationship Between Publishers and Subscribers
+Publishers and subscribers are decoupled: they don’t know about each other directly, only the topic name and message type.
+
+Multiple publishers can publish to the same topic, and multiple subscribers can listen to it.
+
+ROS 2 middleware (DDS) handles discovery, delivery, and Quality of Service (QoS).
+
+⚙️ Example Workflow
+Imagine a robot:
+
+* Publisher: /teleop_node publishes velocity commands (geometry_msgs/msg/Twist) on /cmd_vel.
+
+* Subscriber: /motor_controller subscribes to /cmd_vel and moves the robot accordingly.
+
+🛠️ Useful Commands
+* ros2 topic list → See all topics.
+
+* ros2 topic info /cmd_vel → Shows which nodes are publishing and subscribing.
+
+* ros2 topic echo /cmd_vel → Displays messages being published.
+
+✅ In short:
+
+Publisher = sender of data on a topic
+
+Subscriber = receiver of data from a topic Together, they form the backbone of ROS 2’s publish–subscribe communication model.
+
+### To understand publisher subscriber we use robot_news_station and reciever files and nodes to be publisher and subscriber's
+
+#### Python
+we use use a example of robot_news_station which will be the pubisher and publish a msg (topic).
+
+We will be using example_interfaces.msg -> String type of msg as our topic.
+
+!! Keep in mind that if we use this type then we need to update our dependencies in `package.xml`
+    <depend>example_interfaces</depend>
+
+        import rclpy
+        from rclpy.node import Node
+        from example_interfaces.msg import String
+
+        class RobotNewsStation(Node):
+            def __init_(self):
+                super().__init__('robot_news_station')
+                self.publisher_= self.create_publisher(String, 'robot_news', 10)
+                self.timer_= self.create_timer(2, self.publish_news)
+            def publish_news(self):
+                msg = String()
+                msg.data= 'Sushant is learning ROS2 like a pro!'
+                self.publisher_.publish(msg)
+
+
+        def main(args=None):
+            rclpy.init(args=args)
+            node= RobotNewsStation()
+            rclpy.spin(node)
+            rclpy.shutdown()
+
+        if __name__=="__main__":
+            main()
+
+After writing the code create executable in `setup.py` using:
+    "robot_news_station = my_py_pkg.robot_news_station:main"
+    
+in entry_points 
