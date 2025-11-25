@@ -476,4 +476,53 @@ Now let's learn to build a subscriber who will subscribe to topic by the publish
 
         if __name__=='__main__':
             main()
+
+
+* then build, source and run the subscriber and publisher to publish and receive msg
+
+### Publisher and Subscriber in CPP.
+
+1. Start with going into the src of my_cpp_pkg from home.
+    >> cd ros2_ws/src/my_cpp_pkg/src
+2. touch robot_news_station.cpp for our cpp publisher node creation.
+3. Then write code in the robot_news_station.cpp.
+    We will need `example_interfacs/msg/string.hpp` so we need to include in package.xml 
+
+    <depend>example_interfaces</depend>
+
+    Then continue coding in robot_news_station.cpp
+
+
+4. Then make changes in `CMakeLists.txt` as:
+    add these lines:
+
+            add_executable(robot_news_station src/robot_news_station.cpp)
+            ament_target_dependencies(robot_news_station rclcpp example_interfaces)
+
+            install(
+                TARGETS
+                robot_news_station
+                DESTINATION lib/${PROJECT_NAME}
+            )
+
+5. Build, source and then run the code as we did. TO test we can see:
+    >> ros2 topic list
     
+    o/p:
+
+        sushant-ros@sushant-ros:~$ ros2 topic list
+        /parameter_events
+        /robot_news
+        /rosout
+
+    then:
+
+    >> ros2 topic echo /robot_news
+
+    This will help us see the topic being published. We can also use our subscriber written in python to recieve the msg from spublisher written in cpp.
+
+    >> ros2 run my_py_pkg smartphone
+
+    Will work as ros2 is language independent as much as we write correct topic name.
+
+6. Write the subscriber in cpp as similar to publisher the steps only the code for subscriber gets different.

@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/bu
 # The main recursive "all" target.
 all: CMakeFiles/cpp_node.dir/all
 all: CMakeFiles/cpp_node_oop.dir/all
+all: CMakeFiles/robot_news_station.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/my_cpp_pkg_uninstall.dir/clean
 clean: CMakeFiles/cpp_node.dir/clean
 clean: CMakeFiles/cpp_node_oop.dir/clean
+clean: CMakeFiles/robot_news_station.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -181,6 +183,32 @@ cpp_node_oop: CMakeFiles/cpp_node_oop.dir/rule
 CMakeFiles/cpp_node_oop.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_node_oop.dir/build.make CMakeFiles/cpp_node_oop.dir/clean
 .PHONY : CMakeFiles/cpp_node_oop.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/robot_news_station.dir
+
+# All Build rule for target.
+CMakeFiles/robot_news_station.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_news_station.dir/build.make CMakeFiles/robot_news_station.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_news_station.dir/build.make CMakeFiles/robot_news_station.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg/CMakeFiles --progress-num=5,6 "Built target robot_news_station"
+.PHONY : CMakeFiles/robot_news_station.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/robot_news_station.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_news_station.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/robot_news_station.dir/rule
+
+# Convenience name for target.
+robot_news_station: CMakeFiles/robot_news_station.dir/rule
+.PHONY : robot_news_station
+
+# clean rule for target.
+CMakeFiles/robot_news_station.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_news_station.dir/build.make CMakeFiles/robot_news_station.dir/clean
+.PHONY : CMakeFiles/robot_news_station.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

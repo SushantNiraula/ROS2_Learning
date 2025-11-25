@@ -36,13 +36,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 18,
+				"line" : 22,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 25,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
@@ -265,6 +265,29 @@
 			{
 				"id" : "cpp_node_oop::@6890427a1f51a3e7e1df",
 				"index" : 1
+			},
+			"destination" : "lib/my_cpp_pkg",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/my_cpp_pkg",
+			"paths" : 
+			[
+				"robot_news_station"
+			],
+			"targetId" : "robot_news_station::@6890427a1f51a3e7e1df",
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "robot_news_station::@6890427a1f51a3e7e1df",
+				"index" : 3
 			},
 			"destination" : "lib/my_cpp_pkg",
 			"type" : "cxxModuleBmi"
