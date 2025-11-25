@@ -442,4 +442,38 @@ We will be using example_interfaces.msg -> String type of msg as our topic.
 After writing the code create executable in `setup.py` using:
     "robot_news_station = my_py_pkg.robot_news_station:main"
     
-in entry_points 
+in entry_points of `setup.py`
+
+Then colcon build the package and source and just run like you do :
+
+>> ros2 run my_py_pkg robot_news_station
+
+The topic 'robot_news' is published by the subscriber but currently we cannot see it.
+
+Now let's learn to build a subscriber who will subscribe to topic by the publisher to receive the msg in the topic.
+
+* create a python file smartphone.py as a receiver/subscriber.
+* Then code it with code where we create a subscriber:
+
+        import rclpy
+        from rclpy.node import Node
+        from example_interfaces.msg import String
+
+        class SmartphoneNode(Node):
+            def __init__(self):
+                super().__init__('smartphone')
+                self.subscriber_=self.create_subscription(String,'robot_news',self.news_received,10)
+            
+            def news_received(self, msg: String):
+                news_data= msg.data
+                self.get_logger().info(news_data)
+
+        def main(args=None):
+            rclpy.init(args=args)
+            node= SmartphoneNode()
+            rclpy.spin(node)
+            rclpy.shutdown()
+
+        if __name__=='__main__':
+            main()
+    
