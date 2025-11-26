@@ -19,11 +19,16 @@ ament_target_dependencies(cpp_node_oop rclcpp)
 add_executable(robot_news_station src/robot_news_station.cpp)
 ament_target_dependencies(robot_news_station rclcpp example_interfaces)
 
+add_executable(smartphone src/smartphone.cpp)
+ament_target_dependencies(smartphone rclcpp example_interfaces)
+
+
 install(
   TARGETS
   cpp_node
   cpp_node_oop
   robot_news_station
+  smartphone
   DESTINATION lib/${PROJECT_NAME}
 )
 

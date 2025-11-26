@@ -1,0 +1,70 @@
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:7:33:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+    7 |         SmartphoneNode() : Node([01;35m[K'smartphone'[m[K)
+      |                                 [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:28:2:[m[K [01;31m[Kerror: [m[Kunterminated argument list invoking macro "RCLCPP_INFO"
+   28 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:17:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   17 |         RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(),"%s", msg->data.c_st(r);
+      |                    [01;31m[K^[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:5:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+    5 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:[m[K In constructor ‘[01m[KSmartphoneNode::[01;32m[KSmartphoneNode[m[K()[m[K’:
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:7:45:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node(int)[m[K’
+    7 |         SmartphoneNode() : Node('smartphone'[01;31m[K)[m[K
+      |                                             [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const rclcpp::Node&, const std::string&)[m[K’
+ 1629 |   [01;36m[KNode[m[K(
+      |   [01;36m[K^~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const std::string&, const std::string&, const rclcpp::NodeOptions&)[m[K’
+  103 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:91:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const std::string&, const rclcpp::NodeOptions&)[m[K’
+   91 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:92:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst std::string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+   92 |     [01;36m[Kconst std::string & node_name[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:9:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscriber_[m[K’ was not declared in this scope
+    9 |         [01;31m[Ksubscriber_[m[K=this->create_Subscription<example_interfaces::msg::String>("robot_news", 10,
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:9:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass SmartphoneNode[m[K’ has no member named ‘[01m[Kcreate_Subscription[m[K’; did you mean ‘[01m[Kcreate_subscription[m[K’?
+    9 |         subscriber_=this->[01;31m[Kcreate_Subscription[m[K<example_interfaces::msg::String>("robot_news", 10,
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                           [32m[Kcreate_subscription[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:9:78:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+    9 |         subscriber_=this->create_Subscription<example_interfaces::msg::String[01;31m[K>[m[K("robot_news", 10,
+      |                                                                              [01;31m[K^[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:9:80:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+    9 |         subscriber_=this->create_Subscription<example_interfaces::msg::String>([01;35m[K"robot_news"[m[K, 10,
+      |                                                                                [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:86:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   10 |             std::bind(&SmartphoneNode::callbackRobotNews, this, std::placeholders::_1[01;35m[K)[m[K);
+      |                                                                                      [01;35m[K^[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:[m[K In member function ‘[01m[Kvoid SmartphoneNode::[01;32m[KcallbackRobotNews[m[K(example_interfaces::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:17:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+   17 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),"%s", msg->data.c_st(r);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:17:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   17 |         RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(),"%s", msg->data.c_st(r);
+      |                    [01;31m[K^[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:16:81:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   16 |     void callbackRobotNews(const example_interfaces::msg::String::SharedPtr msg)[01;36m[K{[m[K
+      |                                                                                 [01;36m[K^[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:16:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 |     void callbackRobotNews([01;35m[Kconst example_interfaces::msg::String::SharedPtr msg[m[K){
+      |                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:[m[K At global scope:
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:17:20:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+   17 |         RCLCPP_INFO[01;31m[K([m[Kthis->get_logger(),"%s", msg->data.c_st(r);
+      |                    [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/smartphone.dir/build.make:76: CMakeFiles/smartphone.dir/src/smartphone.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/smartphone.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

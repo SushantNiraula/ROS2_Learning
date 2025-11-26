@@ -526,3 +526,133 @@ Now let's learn to build a subscriber who will subscribe to topic by the publish
     Will work as ros2 is language independent as much as we write correct topic name.
 
 6. Write the subscriber in cpp as similar to publisher the steps only the code for subscriber gets different.
+    Same as Publisher just the code is different. 
+
+
+## Introspect ROS2 Topics with Command Line
+
+Perfect question 🙌 — these are the **ROS2 command-line tools** you’ll use all the time to inspect and debug your system. Let’s go through each one carefully so you know exactly what it does.
+
+---
+
+## 🔎 ROS2 CLI Commands Explained
+
+### 1. `ros2 topic list`
+- Shows **all active topics** in the ROS2 system.
+- Example output might look like:
+  ```
+  /parameter_events
+  /rosout
+  /robot_news
+  ```
+- This helps you discover what topics are currently being published.
+
+---
+
+### 2. `ros2 topic info <topic_name>`
+- Displays **metadata about a topic**.
+- Includes:
+  - Message type (e.g., `example_interfaces/msg/String`)
+  - Number of publishers
+  - Number of subscribers
+- Example:
+  ```
+  Type: example_interfaces/msg/String
+  Publishers: 1
+  Subscribers: 2
+  ```
+
+---
+
+### 3. `ros2 topic echo /robot_news`
+- Prints the **actual messages** being published on `/robot_news` to the terminal.
+- Example output:
+  ```
+  data: "Hello, this is ROS2_Robot_Sushant From the robot news station."
+  ```
+
+---
+
+### 4. `ros2 topic hz /robot_news`
+- Measures the **publish rate (frequency)** of messages on `/robot_news`.
+- Example output:
+  ```
+  average rate: 2.00Hz
+  min: 0.49s max: 0.51s std dev: 0.01s window: 10
+  ```
+- Useful to check if your publisher is running at the expected speed (e.g., 2 Hz for 0.5s timer).
+
+---
+
+### 5. `ros2 topic bw /robot_news`
+- Measures the **bandwidth usage** of a topic.
+- Shows how much data per second is being transmitted.
+- Example output:
+  ```
+  average: 50 B/s
+  peak: 60 B/s
+  window: 10
+  ```
+- Helpful when working with large messages (like images or point clouds).
+
+---
+
+### 6.  
+```bash
+ros2 topic pub -r 5 /robot_news example_interfaces/msg/String "{data: 'Hello from the terminal'}"
+```
+- Publishes a message manually from the terminal.
+- `-r 5` → publish at **5 Hz** (5 times per second).
+- Topic: `/robot_news`
+- Message type: `example_interfaces/msg/String`
+- Message content: `"Hello from the terminal"`
+- This simulates a publisher without writing code.
+
+---
+
+### 7. `ros2 node list`
+- Lists all active nodes in the system.
+- Example output:
+  ```
+  /robot_news_station
+  /smartphone
+  ```
+- Helps you see which nodes are running.
+
+---
+
+### 8. `ros2 node info /robot_news_station`
+- Shows detailed info about a specific node.
+- Includes:
+  - Subscribed topics
+  - Published topics
+  - Services provided
+  - Parameters
+- Example output:
+  ```
+  Publishers:
+    /robot_news: example_interfaces/msg/String
+  Subscribers:
+    None
+  Services:
+    /robot_news_station/get_parameters
+    /robot_news_station/set_parameters
+  ```
+
+---
+
+## 🧩 Summary Table
+
+| Command | Purpose |
+|---------|---------|
+| `ros2 topic list` | List all active topics |
+| `ros2 topic info` | Show type, publishers, subscribers of a topic |
+| `ros2 topic echo` | Print messages from a topic |
+| `ros2 topic hz` | Measure publish frequency (Hz) |
+| `ros2 topic bw` | Measure bandwidth usage |
+| `ros2 topic pub` | Publish a message manually |
+| `ros2 node list` | List all active nodes |
+| `ros2 node info` | Show details about a node |
+
+
+## Remapping Topic at Runtime.
