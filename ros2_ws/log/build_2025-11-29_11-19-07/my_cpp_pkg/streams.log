@@ -1,0 +1,31 @@
+[0.014s] Invoking command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg -- -j8 -l8
+[0.121s] [ 41%] Built target cpp_node
+[0.121s] [ 41%] Built target robot_news_station
+[0.123s] [ 50%] Built target cpp_node_oop
+[0.123s] [ 66%] Built target smartphone
+[0.124s] [ 83%] Built target number_publisher
+[0.130s] [ 91%] [32mBuilding CXX object CMakeFiles/number_counter.dir/src/number_counter.cpp.o[0m
+[3.683s] [01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample[m[K’ was not declared in this scope
+[3.683s]    24 |         rclcpp::Subscription<[01;31m[Kexample[m[K::interfaces::msg::Int64>::SharedPtr number_subscriber_;
+[3.683s]       |                              [01;31m[K^~~~~~~[m[K
+[3.683s] [01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.683s]    24 |         rclcpp::Subscription<example::interfaces::msg::Int64[01;31m[K>[m[K::SharedPtr number_subscriber_;
+[3.683s]       |                                                             [01;31m[K^[m[K
+[3.683s] [01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[3.683s] [01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[3.684s] [01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[3.684s] [01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:64:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.684s]    24 |         rclcpp::Subscription<example::interfaces::msg::Int64>::[01;31m[KSharedPtr[m[K number_subscriber_;
+[3.684s]       |                                                                [01;31m[K^~~~~~~~~[m[K
+[3.684s]       |                                                                         [32m[K;[m[K
+[3.688s] [01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:74:[m[K [01;31m[Kerror: [m[K‘[01m[Knumber_subscriber_[m[K’ does not name a type
+[3.688s]    24 |         rclcpp::Subscription<example::interfaces::msg::Int64>::SharedPtr [01;31m[Knumber_subscriber_[m[K;
+[3.688s]       |                                                                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.706s] [01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:[m[K In constructor ‘[01m[KNumberCounterNode::[01;32m[KNumberCounterNode[m[K()[m[K’:
+[3.706s] [01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:10:13:[m[K [01;31m[Kerror: [m[K‘[01m[Knumber_subscriber_[m[K’ was not declared in this scope
+[3.706s]    10 |             [01;31m[Knumber_subscriber_[m[K= this->create_subscription<example_interfaces::msg::Int64>("number", 10, std::bind(&NumberCounterNode::numberCallback, this, _1));
+[3.706s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[7.903s] gmake[2]: *** [CMakeFiles/number_counter.dir/build.make:76: CMakeFiles/number_counter.dir/src/number_counter.cpp.o] Error 1
+[7.904s] gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/number_counter.dir/all] Error 2
+[7.906s] gmake: *** [Makefile:146: all] Error 2
+[7.915s] Invoked command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg -- -j8 -l8

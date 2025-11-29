@@ -1,0 +1,176 @@
+[0.000000] (-) TimerEvent: {}
+[0.001329] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.001420] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.001464] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.011788] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.013553] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.013611] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg', '--', '-j8', '-l8'], 'cwd': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2799-5-sushant-ros_TIME3285430', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sushant-ros', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/sushant-ros', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/sushant-ros', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2522', 'SYSTEMD_EXEC_PID': '2799', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', '_CONDA_ROOT': '/home/sushant-ros/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6469', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/sushant-ros/agri_bot_ws/install:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sushant-ros', 'JOURNAL_STREAM': '9:17329', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sushant-ros', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/home/sushant-ros/miniconda3/condabin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/sushant-ros:@/tmp/.ICE-unix/2765,unix/sushant-ros:/tmp/.ICE-unix/2765', 'INVOCATION_ID': '42f76aa81cde4c3ea5870b4a374f060b', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.5B0RG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/sushant-ros/agri_bot_ws/install/agri_bot_navigation:/home/sushant-ros/agri_bot_ws/install/agri_bot_description:/home/sushant-ros/agri_bot_ws/install/agri_bot_control:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/sushant-ros/miniconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:b39e5691-ebb2-4b16-9829-37555052dd1e', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/sushant-ros/miniconda3/bin/conda', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/sushant-ros/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/sushant-ros/agri_bot_ws/install/agri_bot_navigation:/home/sushant-ros/agri_bot_ws/install/agri_bot_description:/home/sushant-ros/agri_bot_ws/install/agri_bot_control:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy'}), 'shell': False}
+[0.100034] (-) TimerEvent: {}
+[0.113772] (my_cpp_pkg) StdoutLine: {'line': b'[ 20%] Built target cpp_node_oop\n'}
+[0.118783] (my_cpp_pkg) StdoutLine: {'line': b'[ 40%] Built target robot_news_station\n'}
+[0.120511] (my_cpp_pkg) StdoutLine: {'line': b'[ 60%] Built target cpp_node\n'}
+[0.126928] (my_cpp_pkg) StdoutLine: {'line': b'[ 80%] Built target smartphone\n'}
+[0.129821] (my_cpp_pkg) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/number_publisher.dir/src/number_publisher.cpp.o\x1b[0m\n'}
+[0.200155] (-) TimerEvent: {}
+[0.300519] (-) TimerEvent: {}
+[0.400844] (-) TimerEvent: {}
+[0.501173] (-) TimerEvent: {}
+[0.601553] (-) TimerEvent: {}
+[0.701886] (-) TimerEvent: {}
+[0.802221] (-) TimerEvent: {}
+[0.902550] (-) TimerEvent: {}
+[1.002885] (-) TimerEvent: {}
+[1.103268] (-) TimerEvent: {}
+[1.203605] (-) TimerEvent: {}
+[1.303950] (-) TimerEvent: {}
+[1.404284] (-) TimerEvent: {}
+[1.504699] (-) TimerEvent: {}
+[1.605090] (-) TimerEvent: {}
+[1.705528] (-) TimerEvent: {}
+[1.805888] (-) TimerEvent: {}
+[1.906236] (-) TimerEvent: {}
+[2.006608] (-) TimerEvent: {}
+[2.107003] (-) TimerEvent: {}
+[2.207366] (-) TimerEvent: {}
+[2.307715] (-) TimerEvent: {}
+[2.408101] (-) TimerEvent: {}
+[2.508475] (-) TimerEvent: {}
+[2.608861] (-) TimerEvent: {}
+[2.709826] (-) TimerEvent: {}
+[2.810221] (-) TimerEvent: {}
+[2.910604] (-) TimerEvent: {}
+[3.010998] (-) TimerEvent: {}
+[3.111401] (-) TimerEvent: {}
+[3.211777] (-) TimerEvent: {}
+[3.312152] (-) TimerEvent: {}
+[3.412528] (-) TimerEvent: {}
+[3.483897] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode::\x1b[01;32m\x1b[KNumberPublisherNode\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.484799] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:12:88:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpublishNumber\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.485039] (my_cpp_pkg) StderrLine: {'line': b'   12 |             number_timer_= this->create_wall_timer(1s, std::bind(&NumberPublisherNode::\x1b[01;31m\x1b[KpublishNumber\x1b[m\x1b[K, this));\n'}
+[3.485514] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.485887] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[3.486135] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[3.486336] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:1\x1b[m\x1b[K:\n'}
+[3.486517] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:13:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator-\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Logger\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.486704] (my_cpp_pkg) StderrLine: {'line': b'   13 |             RCLCPP_INFO(\x1b[32m\x1b[Kthis\x1b[m\x1b[K\x1b[01;31m\x1b[K-\x1b[m\x1b[K\x1b[34m\x1b[Kget_logger()\x1b[m\x1b[K, "Number Publisher has Started.");\n'}
+[3.486877] (my_cpp_pkg) StderrLine: {'line': b'      |                         \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[34m\x1b[K~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.487057] (my_cpp_pkg) StderrLine: {'line': b'      |                         \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[3.487230] (my_cpp_pkg) StderrLine: {'line': b'      |                         \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[Krclcpp::Logger\x1b[m\x1b[K\n'}
+[3.487348] (my_cpp_pkg) StderrLine: {'line': b'      |                         \x1b[32m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\n'}
+[3.487460] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[3.487573] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_uninitialized.h:63\x1b[m\x1b[K,\n'}
+[3.487684] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:69\x1b[m\x1b[K,\n'}
+[3.487797] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169\x1b[m\x1b[K:\n'}
+[3.487910] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.488027] (my_cpp_pkg) StderrLine: {'line': b'  625 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const reverse_iterator<_IteratorL>& __x,\n'}
+[3.488153] (my_cpp_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.488276] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.488389] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:13:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.488504] (my_cpp_pkg) StderrLine: {'line': b'   13 |             RCLCPP_INFO(this-get_logger(\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "Number Publisher has Started.");\n'}
+[3.488613] (my_cpp_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.488724] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.488848] (my_cpp_pkg) StderrLine: {'line': b' 1800 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const move_iterator<_IteratorL>& __x,\n'}
+[3.488962] (my_cpp_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.489071] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.489201] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:13:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.489333] (my_cpp_pkg) StderrLine: {'line': b'   13 |             RCLCPP_INFO(this-get_logger(\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "Number Publisher has Started.");\n'}
+[3.489442] (my_cpp_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.489565] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/time.hpp:24\x1b[m\x1b[K,\n'}
+[3.489672] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/clock.hpp:24\x1b[m\x1b[K,\n'}
+[3.489782] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:38\x1b[m\x1b[K,\n'}
+[3.489892] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.490002] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.490108] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.490231] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.490342] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22\x1b[m\x1b[K,\n'}
+[3.490448] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38\x1b[m\x1b[K,\n'}
+[3.490555] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.490674] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.490782] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K:\n'}
+[3.490890] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:168:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time rclcpp::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const builtin_interfaces::msg::Time&, const Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.491002] (my_cpp_pkg) StderrLine: {'line': b'  168 | \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const builtin_interfaces::msg::Time & lhs, const rclcpp::Duration & rhs);\n'}
+[3.491111] (my_cpp_pkg) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.491241] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:168:49:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[3.491356] (my_cpp_pkg) StderrLine: {'line': b'  168 | operator-(\x1b[01;36m\x1b[Kconst builtin_interfaces::msg::Time & lhs\x1b[m\x1b[K, const rclcpp::Duration & rhs);\n'}
+[3.491466] (my_cpp_pkg) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.491577] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:13:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.491684] (my_cpp_pkg) StderrLine: {'line': b'   13 |             \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this-get_logger(), "Number Publisher has Started.");\n'}
+[3.491795] (my_cpp_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.491904] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K:\n'}
+[3.492015] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:13:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator-\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Logger\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.492130] (my_cpp_pkg) StderrLine: {'line': b'   13 |             RCLCPP_INFO(\x1b[32m\x1b[Kthis\x1b[m\x1b[K\x1b[01;31m\x1b[K-\x1b[m\x1b[K\x1b[34m\x1b[Kget_logger()\x1b[m\x1b[K, "Number Publisher has Started.");\n'}
+[3.492307] (my_cpp_pkg) StderrLine: {'line': b'      |                         \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[34m\x1b[K~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.492428] (my_cpp_pkg) StderrLine: {'line': b'      |                         \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[3.492537] (my_cpp_pkg) StderrLine: {'line': b'      |                         \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[Krclcpp::Logger\x1b[m\x1b[K\n'}
+[3.492644] (my_cpp_pkg) StderrLine: {'line': b'      |                         \x1b[32m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\n'}
+[3.492751] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.492881] (my_cpp_pkg) StderrLine: {'line': b'  625 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const reverse_iterator<_IteratorL>& __x,\n'}
+[3.492988] (my_cpp_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.493095] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.493230] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:13:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.493354] (my_cpp_pkg) StderrLine: {'line': b'   13 |             RCLCPP_INFO(this-get_logger(\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "Number Publisher has Started.");\n'}
+[3.493471] (my_cpp_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.493581] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.493691] (my_cpp_pkg) StderrLine: {'line': b' 1800 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const move_iterator<_IteratorL>& __x,\n'}
+[3.493799] (my_cpp_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.493906] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.494016] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:13:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.494128] (my_cpp_pkg) StderrLine: {'line': b'   13 |             RCLCPP_INFO(this-get_logger(\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "Number Publisher has Started.");\n'}
+[3.494257] (my_cpp_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.494368] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:168:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time rclcpp::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const builtin_interfaces::msg::Time&, const Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.494490] (my_cpp_pkg) StderrLine: {'line': b'  168 | \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const builtin_interfaces::msg::Time & lhs, const rclcpp::Duration & rhs);\n'}
+[3.494595] (my_cpp_pkg) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.494698] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:168:49:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[3.494817] (my_cpp_pkg) StderrLine: {'line': b'  168 | operator-(\x1b[01;36m\x1b[Kconst builtin_interfaces::msg::Time & lhs\x1b[m\x1b[K, const rclcpp::Duration & rhs);\n'}
+[3.494931] (my_cpp_pkg) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.495035] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:13:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator-\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Logger\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.495147] (my_cpp_pkg) StderrLine: {'line': b'   13 |             RCLCPP_INFO(\x1b[32m\x1b[Kthis\x1b[m\x1b[K\x1b[01;31m\x1b[K-\x1b[m\x1b[K\x1b[34m\x1b[Kget_logger()\x1b[m\x1b[K, "Number Publisher has Started.");\n'}
+[3.495295] (my_cpp_pkg) StderrLine: {'line': b'      |                         \x1b[32m\x1b[K~~~~\x1b[m\x1b[K\x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[34m\x1b[K~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.495401] (my_cpp_pkg) StderrLine: {'line': b'      |                         \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[3.495507] (my_cpp_pkg) StderrLine: {'line': b'      |                         \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[Krclcpp::Logger\x1b[m\x1b[K\n'}
+[3.495610] (my_cpp_pkg) StderrLine: {'line': b'      |                         \x1b[32m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\n'}
+[3.495722] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.495833] (my_cpp_pkg) StderrLine: {'line': b'  625 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const reverse_iterator<_IteratorL>& __x,\n'}
+[3.495938] (my_cpp_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.496041] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.496143] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:13:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.496269] (my_cpp_pkg) StderrLine: {'line': b'   13 |             RCLCPP_INFO(this-get_logger(\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "Number Publisher has Started.");\n'}
+[3.496372] (my_cpp_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.496475] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.496600] (my_cpp_pkg) StderrLine: {'line': b' 1800 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const move_iterator<_IteratorL>& __x,\n'}
+[3.496715] (my_cpp_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.496817] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.496923] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:13:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.497041] (my_cpp_pkg) StderrLine: {'line': b'   13 |             RCLCPP_INFO(this-get_logger(\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "Number Publisher has Started.");\n'}
+[3.497146] (my_cpp_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.497265] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:168:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time rclcpp::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const builtin_interfaces::msg::Time&, const Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.497384] (my_cpp_pkg) StderrLine: {'line': b'  168 | \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const builtin_interfaces::msg::Time & lhs, const rclcpp::Duration & rhs);\n'}
+[3.497483] (my_cpp_pkg) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.497579] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:168:49:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KNumberPublisherNode*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[3.497749] (my_cpp_pkg) StderrLine: {'line': b'  168 | operator-(\x1b[01;36m\x1b[Kconst builtin_interfaces::msg::Time & lhs\x1b[m\x1b[K, const rclcpp::Duration & rhs);\n'}
+[3.497935] (my_cpp_pkg) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.498094] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid NumberPublisherNode::\x1b[01;32m\x1b[Knumber_publisher\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.498284] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_publisher.cpp:17:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.498471] (my_cpp_pkg) StderrLine: {'line': b'   17 |             auto msg = example_interfaces::msg::Int64\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[3.498593] (my_cpp_pkg) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.512670] (-) TimerEvent: {}
+[3.613035] (-) TimerEvent: {}
+[3.713388] (-) TimerEvent: {}
+[3.813723] (-) TimerEvent: {}
+[3.914069] (-) TimerEvent: {}
+[4.014391] (-) TimerEvent: {}
+[4.114784] (-) TimerEvent: {}
+[4.215138] (-) TimerEvent: {}
+[4.315533] (-) TimerEvent: {}
+[4.415887] (-) TimerEvent: {}
+[4.516329] (-) TimerEvent: {}
+[4.616664] (-) TimerEvent: {}
+[4.716996] (-) TimerEvent: {}
+[4.817363] (-) TimerEvent: {}
+[4.917709] (-) TimerEvent: {}
+[4.953522] (my_cpp_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/number_publisher.dir/build.make:76: CMakeFiles/number_publisher.dir/src/number_publisher.cpp.o] Error 1\n'}
+[4.953954] (my_cpp_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/number_publisher.dir/all] Error 2\n'}
+[4.954275] (my_cpp_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.957788] (my_cpp_pkg) CommandEnded: {'returncode': 2}
+[4.970600] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 2}
+[4.981232] (-) EventReactorShutdown: {}

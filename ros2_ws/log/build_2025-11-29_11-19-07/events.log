@@ -1,0 +1,118 @@
+[0.000000] (-) TimerEvent: {}
+[0.000200] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.000282] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.000312] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.010726] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.012156] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.012420] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg', '--', '-j8', '-l8'], 'cwd': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2799-5-sushant-ros_TIME3285430', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sushant-ros', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/sushant-ros', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/sushant-ros', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2522', 'SYSTEMD_EXEC_PID': '2799', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', '_CONDA_ROOT': '/home/sushant-ros/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6469', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/sushant-ros/agri_bot_ws/install:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sushant-ros', 'JOURNAL_STREAM': '9:17329', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sushant-ros', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/home/sushant-ros/miniconda3/condabin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/sushant-ros:@/tmp/.ICE-unix/2765,unix/sushant-ros:/tmp/.ICE-unix/2765', 'INVOCATION_ID': '42f76aa81cde4c3ea5870b4a374f060b', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.5B0RG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/sushant-ros/agri_bot_ws/install/agri_bot_navigation:/home/sushant-ros/agri_bot_ws/install/agri_bot_description:/home/sushant-ros/agri_bot_ws/install/agri_bot_control:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/sushant-ros/miniconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:b39e5691-ebb2-4b16-9829-37555052dd1e', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/sushant-ros/miniconda3/bin/conda', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/sushant-ros/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/sushant-ros/agri_bot_ws/install/agri_bot_navigation:/home/sushant-ros/agri_bot_ws/install/agri_bot_description:/home/sushant-ros/agri_bot_ws/install/agri_bot_control:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy'}), 'shell': False}
+[0.099238] (-) TimerEvent: {}
+[0.120647] (my_cpp_pkg) StdoutLine: {'line': b'[ 41%] Built target cpp_node\n'}
+[0.121260] (my_cpp_pkg) StdoutLine: {'line': b'[ 41%] Built target robot_news_station\n'}
+[0.122810] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] Built target cpp_node_oop\n'}
+[0.123470] (my_cpp_pkg) StdoutLine: {'line': b'[ 66%] Built target smartphone\n'}
+[0.124580] (my_cpp_pkg) StdoutLine: {'line': b'[ 83%] Built target number_publisher\n'}
+[0.129832] (my_cpp_pkg) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/number_counter.dir/src/number_counter.cpp.o\x1b[0m\n'}
+[0.199376] (-) TimerEvent: {}
+[0.299732] (-) TimerEvent: {}
+[0.400070] (-) TimerEvent: {}
+[0.500389] (-) TimerEvent: {}
+[0.600705] (-) TimerEvent: {}
+[0.701046] (-) TimerEvent: {}
+[0.802130] (-) TimerEvent: {}
+[0.902518] (-) TimerEvent: {}
+[1.003182] (-) TimerEvent: {}
+[1.106615] (-) TimerEvent: {}
+[1.206941] (-) TimerEvent: {}
+[1.307286] (-) TimerEvent: {}
+[1.407816] (-) TimerEvent: {}
+[1.508198] (-) TimerEvent: {}
+[1.608542] (-) TimerEvent: {}
+[1.708849] (-) TimerEvent: {}
+[1.809216] (-) TimerEvent: {}
+[1.909560] (-) TimerEvent: {}
+[2.009910] (-) TimerEvent: {}
+[2.110320] (-) TimerEvent: {}
+[2.210847] (-) TimerEvent: {}
+[2.311111] (-) TimerEvent: {}
+[2.411439] (-) TimerEvent: {}
+[2.511777] (-) TimerEvent: {}
+[2.612140] (-) TimerEvent: {}
+[2.712570] (-) TimerEvent: {}
+[2.812916] (-) TimerEvent: {}
+[2.913251] (-) TimerEvent: {}
+[3.013596] (-) TimerEvent: {}
+[3.113953] (-) TimerEvent: {}
+[3.214512] (-) TimerEvent: {}
+[3.315023] (-) TimerEvent: {}
+[3.415408] (-) TimerEvent: {}
+[3.515751] (-) TimerEvent: {}
+[3.616153] (-) TimerEvent: {}
+[3.682378] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kexample\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.683089] (my_cpp_pkg) StderrLine: {'line': b'   24 |         rclcpp::Subscription<\x1b[01;31m\x1b[Kexample\x1b[m\x1b[K::interfaces::msg::Int64>::SharedPtr number_subscriber_;\n'}
+[3.683229] (my_cpp_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.683348] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.683464] (my_cpp_pkg) StderrLine: {'line': b'   24 |         rclcpp::Subscription<example::interfaces::msg::Int64\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr number_subscriber_;\n'}
+[3.683577] (my_cpp_pkg) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.683689] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[3.683799] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[3.683909] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[3.684024] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[3.684148] (my_cpp_pkg) StderrLine: {'line': b'   24 |         rclcpp::Subscription<example::interfaces::msg::Int64>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K number_subscriber_;\n'}
+[3.684259] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.684369] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                         \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[3.688008] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:24:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knumber_subscriber_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.688201] (my_cpp_pkg) StderrLine: {'line': b'   24 |         rclcpp::Subscription<example::interfaces::msg::Int64>::SharedPtr \x1b[01;31m\x1b[Knumber_subscriber_\x1b[m\x1b[K;\n'}
+[3.688323] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.705802] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KNumberCounterNode::\x1b[01;32m\x1b[KNumberCounterNode\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.706027] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:10:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knumber_subscriber_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.706171] (my_cpp_pkg) StderrLine: {'line': b'   10 |             \x1b[01;31m\x1b[Knumber_subscriber_\x1b[m\x1b[K= this->create_subscription<example_interfaces::msg::Int64>("number", 10, std::bind(&NumberCounterNode::numberCallback, this, _1));\n'}
+[3.706279] (my_cpp_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.716252] (-) TimerEvent: {}
+[3.816525] (-) TimerEvent: {}
+[3.916860] (-) TimerEvent: {}
+[4.017174] (-) TimerEvent: {}
+[4.117641] (-) TimerEvent: {}
+[4.218003] (-) TimerEvent: {}
+[4.318345] (-) TimerEvent: {}
+[4.418695] (-) TimerEvent: {}
+[4.519113] (-) TimerEvent: {}
+[4.619494] (-) TimerEvent: {}
+[4.719825] (-) TimerEvent: {}
+[4.820272] (-) TimerEvent: {}
+[4.920622] (-) TimerEvent: {}
+[5.020977] (-) TimerEvent: {}
+[5.121395] (-) TimerEvent: {}
+[5.221853] (-) TimerEvent: {}
+[5.322363] (-) TimerEvent: {}
+[5.423111] (-) TimerEvent: {}
+[5.524287] (-) TimerEvent: {}
+[5.625215] (-) TimerEvent: {}
+[5.726891] (-) TimerEvent: {}
+[5.828193] (-) TimerEvent: {}
+[5.928764] (-) TimerEvent: {}
+[6.029562] (-) TimerEvent: {}
+[6.130115] (-) TimerEvent: {}
+[6.230784] (-) TimerEvent: {}
+[6.331254] (-) TimerEvent: {}
+[6.431801] (-) TimerEvent: {}
+[6.532277] (-) TimerEvent: {}
+[6.633121] (-) TimerEvent: {}
+[6.733689] (-) TimerEvent: {}
+[6.834196] (-) TimerEvent: {}
+[6.934880] (-) TimerEvent: {}
+[7.035978] (-) TimerEvent: {}
+[7.136396] (-) TimerEvent: {}
+[7.236792] (-) TimerEvent: {}
+[7.337173] (-) TimerEvent: {}
+[7.437612] (-) TimerEvent: {}
+[7.538207] (-) TimerEvent: {}
+[7.638669] (-) TimerEvent: {}
+[7.739017] (-) TimerEvent: {}
+[7.839494] (-) TimerEvent: {}
+[7.901626] (my_cpp_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/number_counter.dir/build.make:76: CMakeFiles/number_counter.dir/src/number_counter.cpp.o] Error 1\n'}
+[7.904011] (my_cpp_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/number_counter.dir/all] Error 2\n'}
+[7.905847] (my_cpp_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.914108] (my_cpp_pkg) CommandEnded: {'returncode': 2}
+[7.939667] (-) TimerEvent: {}
+[7.961316] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 2}
+[7.974057] (-) EventReactorShutdown: {}

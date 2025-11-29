@@ -656,3 +656,62 @@ ros2 topic pub -r 5 /robot_news example_interfaces/msg/String "{data: 'Hello fro
 
 
 ## Remapping Topic at Runtime.
+
+Remapping a topic at runtime means changing the name of a communication channel (topic) in ROS (Robot Operating System) while the system is running, without modifying the source code of the nodes.
+
+1. In ROS (Robot Operating System), nodes communicate by publishing and subscribing to topics.
+2. Remapping allows you to redirect a node’s publisher or subscriber from one topic name to another at runtime.
+
+    Example: A node publishes images on `/camera/image_raw`, but your processing node expects `/my_images`. Instead of editing code, you remap `/camera/image_raw → /my_images`.
+
+With this code we change node name:
+
+>> ros2 run my_py_pkg robot_news_station --ros-args -r __node:=my_station
+
+To remap topic name we just use -r previous_topic:=New_topic
+
+>> ros2 run my_py_pkg robot_news_station --ros-args -r __node:=my_station -r robot_news:=Kantipur_news
+
+Then to subscribe to the topic remapped node we use code as:
+
+>> ros2 run my_py_pkg smartphone --ros-args -r robot_news:=Kantipur_news
+
+### Monitoring Topics with RQT-Graph
+
+>> rqt_graph
+
+![
+](image.png)
+
+As we can see that we see the two nodes and links with topic between two nodes i.e publisher and subscriber.
+
+If we have multiple publishers publishing same topic we must make sure that the node names are different. We use the code below to remap the node name:
+
+>> ros2 run my_py_pkg robot_news_station --ros-args -r __node:=robot_news_station2
+
+>> ros2 run my_py_pkg robot_news_station --ros-args -r __node:=robot_news_station3
+
+We can see the rqt_graph of remapped node in graph below.
+
+![alt text](image-1.png)
+
+### Experiment on Topic with Turtlesim
+
+>> ros2 run turtlesim turtlesim_node
+
+This code opens up turtlesim gui.
+
+## ROS2 Topic Activity
+
+We are asked to build a graph alike using our publisher and subscribers.
+
+![
+](image-2.png)
+
+For this activity we have to create a publisher node named as `/number publisher` and it publishes a topic `/number` with a specific msg type. Then a node `/number_counter` subscribes the `/number` topic and also has publisher that publishes topic `/number_count`.
+
+Let's start with node /number_publisher :
+
+The code is simple with just a publisher node number_publsiher which publishes a topic `/number`then
+
+Create a node named number_counter which subscribes to `/number` and then also publishes a counter which keeps on adding the `/number + counter_` again and again. And publishes it.

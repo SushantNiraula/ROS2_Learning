@@ -1,0 +1,6 @@
+[ 41%] Built target cpp_node
+[ 41%] Built target robot_news_station
+[ 50%] Built target cpp_node_oop
+[ 66%] Built target smartphone
+[ 83%] Built target number_publisher
+[ 91%] [32mBuilding CXX object CMakeFiles/number_counter.dir/src/number_counter.cpp.o[0m
