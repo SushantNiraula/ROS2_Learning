@@ -1,0 +1,35 @@
+[0.030s] Invoking command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg -- -j8 -l8
+[0.374s] [ 16%] Built target cpp_node
+[0.376s] [ 41%] [32mBuilding CXX object CMakeFiles/number_counter.dir/src/number_counter.cpp.o[0m
+[0.376s] [ 41%] Built target cpp_node_oop
+[0.377s] [ 75%] Built target smartphone
+[0.377s] [ 75%] Built target number_publisher
+[0.379s] [ 91%] Built target robot_news_station
+[13.411s] [100%] [32m[1mLinking CXX executable number_counter[0m
+[14.433s] [100%] Built target number_counter
+[14.455s] Invoked command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg -- -j8 -l8
+[14.476s] Invoking command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg
+[14.490s] -- Install configuration: ""
+[14.494s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+[14.497s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node_oop
+[14.498s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station
+[14.500s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone
+[14.501s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_publisher
+[14.503s] -- Installing: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter
+[14.510s] -- Set non-toolchain portion of runtime path of "/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter" to ""
+[14.510s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[14.511s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[14.511s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[14.511s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[14.512s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[14.512s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[14.512s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[14.512s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[14.513s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[14.513s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[14.513s] -- Installing: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[14.513s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[14.513s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[14.513s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[14.514s] -- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[14.518s] Invoked command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg

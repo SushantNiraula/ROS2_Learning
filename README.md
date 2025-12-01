@@ -715,3 +715,82 @@ Let's start with node /number_publisher :
 The code is simple with just a publisher node number_publsiher which publishes a topic `/number`then
 
 Create a node named number_counter which subscribes to `/number` and then also publishes a counter which keeps on adding the `/number + counter_` again and again. And publishes it.
+
+
+### ROS2 Services:
+The two most important communication features in ROS 2 are Topics and Services.
+
+Topics are used for data streams, and Services for a client/server interaction.
+
+Difference from Topics:
+
+Topics are asynchronous and continuous (publish/subscribe).
+
+Services are synchronous and one-off (request/response).
+
+Use case: When you need a node to perform an action and return a result immediately.
+
+Example: Resetting a robot’s position, querying sensor calibration, or computing something like a sum.
+
+📦 ROS 2 Interfaces
+Definition: Interfaces are the data structures that define how nodes exchange information.
+
+For topics → you use messages (msg).
+
+For services → you use service definitions (srv).
+
+For actions → you use action definitions (action).
+
+Location: Interfaces are usually defined in .msg, .srv, or .action files inside a package.
+
+Purpose: They describe the request and response fields (for services) or message fields (for topics).
+
+Example of interface is:
+
+int64 a
+int64 b
+---
+int64 sum
+
+Request part (above the ---):
+
+Two integers: a and b.
+
+Response part (below the ---):
+
+One integer: sum.
+
+How it works
+A client node sends two integers (a, b).
+
+The server node receives them, computes a + b, and returns the result in sum.
+
+Example Usage:
+
+After writing the python node for providing a server named add_two_ints we can then build it after which:
+1. ros2 run my_cpp_pkg add_two_ints
+2. ros2 service call /add_two_ints example_interfaces/srv/AddTwoInts "{a: 5, b: 7}"
+3. We will get result as:
+
+        waiting for service to become available...
+        requester: making request: example_interfaces.srv.AddTwoInts_Request(a=3, b=7)
+
+        response:
+        example_interfaces.srv.AddTwoInts_Response(sum=10)
+
+We have currenly called the service from the terminal but now let's write a python service client that call's for service.
+
+Firstly we start with a non oop client which we can use to test our service quickly when building in future.
+
+/add_two_ints_client_no_oop.py
+
+It is where we have written a client code in python.
+
+After writing the node in python file, adding in setup.py and then building and sourcing then we get:
+
+    ros2 run my_py_pkg add_two_ints_client_no_oop 
+    [INFO] [1764568153.032047300] [add_two_ints_client_no_oop]: 3 + 8 = 11
+
+If we have created a service server in c++ or python we can use this client to test our server.
+
+After writing without oop let's then create a new client node using oop.

@@ -1,0 +1,218 @@
+[0.000000] (-) TimerEvent: {}
+[0.000156] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.000211] (my_py_pkg) JobQueued: {'identifier': 'my_py_pkg', 'dependencies': OrderedDict()}
+[0.000239] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.013495] (my_py_pkg) JobStarted: {'identifier': 'my_py_pkg'}
+[0.025107] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.028004] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.028810] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg', '--', '-j8', '-l8'], 'cwd': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2901-1-sushant-ros_TIME1363026', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sushant-ros', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/sushant-ros', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2610', 'SYSTEMD_EXEC_PID': '2901', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', '_CONDA_ROOT': '/home/sushant-ros/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '5977', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/sushant-ros/agri_bot_ws/install:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sushant-ros', 'JOURNAL_STREAM': '9:19975', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sushant-ros', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/home/sushant-ros/miniconda3/condabin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/sushant-ros:@/tmp/.ICE-unix/2863,unix/sushant-ros:/tmp/.ICE-unix/2863', 'INVOCATION_ID': '409e5fd3092949cb945c0d6f2e6101db', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.A2WNG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg:/home/sushant-ros/agri_bot_ws/install/agri_bot_navigation:/home/sushant-ros/agri_bot_ws/install/agri_bot_description:/home/sushant-ros/agri_bot_ws/install/agri_bot_control:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/sushant-ros/miniconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:defdb207-bab8-498a-b8ba-8defb574afe0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/sushant-ros/miniconda3/bin/conda', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/sushant-ros/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg:/home/sushant-ros/agri_bot_ws/install/agri_bot_navigation:/home/sushant-ros/agri_bot_ws/install/agri_bot_description:/home/sushant-ros/agri_bot_ws/install/agri_bot_control:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy'}), 'shell': False}
+[0.098845] (-) TimerEvent: {}
+[0.199137] (-) TimerEvent: {}
+[0.299447] (-) TimerEvent: {}
+[0.374415] (my_cpp_pkg) StdoutLine: {'line': b'[ 16%] Built target cpp_node\n'}
+[0.374849] (my_cpp_pkg) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/number_counter.dir/src/number_counter.cpp.o\x1b[0m\n'}
+[0.376450] (my_cpp_pkg) StdoutLine: {'line': b'[ 41%] Built target cpp_node_oop\n'}
+[0.376723] (my_cpp_pkg) StdoutLine: {'line': b'[ 75%] Built target smartphone\n'}
+[0.376946] (my_cpp_pkg) StdoutLine: {'line': b'[ 75%] Built target number_publisher\n'}
+[0.379202] (my_cpp_pkg) StdoutLine: {'line': b'[ 91%] Built target robot_news_station\n'}
+[0.399538] (-) TimerEvent: {}
+[0.499826] (-) TimerEvent: {}
+[0.600179] (-) TimerEvent: {}
+[0.700495] (-) TimerEvent: {}
+[0.800813] (-) TimerEvent: {}
+[0.901325] (-) TimerEvent: {}
+[1.001669] (-) TimerEvent: {}
+[1.101965] (-) TimerEvent: {}
+[1.202264] (-) TimerEvent: {}
+[1.302784] (-) TimerEvent: {}
+[1.403153] (-) TimerEvent: {}
+[1.503653] (-) TimerEvent: {}
+[1.604064] (-) TimerEvent: {}
+[1.704507] (-) TimerEvent: {}
+[1.805157] (-) TimerEvent: {}
+[1.905590] (-) TimerEvent: {}
+[1.996535] (my_py_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_py_pkg', 'build', '--build-base', '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build', 'install', '--record', '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_py_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2901-1-sushant-ros_TIME1363026', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sushant-ros', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/sushant-ros', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2610', 'SYSTEMD_EXEC_PID': '2901', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', '_CONDA_ROOT': '/home/sushant-ros/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '5977', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/sushant-ros/agri_bot_ws/install:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sushant-ros', 'JOURNAL_STREAM': '9:19975', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sushant-ros', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/home/sushant-ros/miniconda3/condabin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/sushant-ros:@/tmp/.ICE-unix/2863,unix/sushant-ros:/tmp/.ICE-unix/2863', 'INVOCATION_ID': '409e5fd3092949cb945c0d6f2e6101db', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.A2WNG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg:/home/sushant-ros/agri_bot_ws/install/agri_bot_navigation:/home/sushant-ros/agri_bot_ws/install/agri_bot_description:/home/sushant-ros/agri_bot_ws/install/agri_bot_control:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/sushant-ros/miniconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:defdb207-bab8-498a-b8ba-8defb574afe0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/sushant-ros/miniconda3/bin/conda', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/sushant-ros/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg:/home/sushant-ros/agri_bot_ws/install/agri_bot_navigation:/home/sushant-ros/agri_bot_ws/install/agri_bot_description:/home/sushant-ros/agri_bot_ws/install/agri_bot_control:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.005774] (-) TimerEvent: {}
+[2.106308] (-) TimerEvent: {}
+[2.206661] (-) TimerEvent: {}
+[2.307019] (-) TimerEvent: {}
+[2.407431] (-) TimerEvent: {}
+[2.478360] (my_py_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[2.505217] (my_py_pkg) StdoutLine: {'line': b'writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO\n'}
+[2.505795] (my_py_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt\n'}
+[2.506180] (my_py_pkg) StdoutLine: {'line': b'writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt\n'}
+[2.506425] (my_py_pkg) StdoutLine: {'line': b'writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt\n'}
+[2.506686] (my_py_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt\n'}
+[2.507512] (-) TimerEvent: {}
+[2.574326] (my_py_pkg) StdoutLine: {'line': b"reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[2.577509] (my_py_pkg) StdoutLine: {'line': b"writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[2.578010] (my_py_pkg) StdoutLine: {'line': b'running build\n'}
+[2.578319] (my_py_pkg) StdoutLine: {'line': b'running build_py\n'}
+[2.578562] (my_py_pkg) StdoutLine: {'line': b'copying my_py_pkg/add_two_ints_server.py -> /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg\n'}
+[2.579281] (my_py_pkg) StdoutLine: {'line': b'running install\n'}
+[2.591356] (my_py_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[2.607608] (-) TimerEvent: {}
+[2.627004] (my_py_pkg) StdoutLine: {'line': b'copying /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_server.py -> /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg\n'}
+[2.628646] (my_py_pkg) StdoutLine: {'line': b'byte-compiling /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/add_two_ints_server.py to add_two_ints_server.cpython-312.pyc\n'}
+[2.630096] (my_py_pkg) StdoutLine: {'line': b'running install_data\n'}
+[2.630756] (my_py_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.678985] (my_py_pkg) StdoutLine: {'line': b"removing '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[2.680695] (my_py_pkg) StdoutLine: {'line': b'Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg-0.0.0-py3.12.egg-info\n'}
+[2.682909] (my_py_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[2.707739] (-) TimerEvent: {}
+[2.808119] (-) TimerEvent: {}
+[2.908581] (-) TimerEvent: {}
+[3.006919] (my_py_pkg) StdoutLine: {'line': b'Installing add_two_ints_server script to /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[3.007359] (my_py_pkg) StdoutLine: {'line': b'Installing py_node script to /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[3.007675] (my_py_pkg) StdoutLine: {'line': b'Installing py_node_oop script to /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[3.007934] (my_py_pkg) StdoutLine: {'line': b'Installing robot_news_station script to /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[3.008651] (-) TimerEvent: {}
+[3.009533] (my_py_pkg) StdoutLine: {'line': b'Installing smartphone script to /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[3.010947] (my_py_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_py_pkg/install.log'\n"}
+[3.091680] (my_py_pkg) CommandEnded: {'returncode': 0}
+[3.108772] (-) TimerEvent: {}
+[3.118429] (my_py_pkg) JobEnded: {'identifier': 'my_py_pkg', 'rc': 0}
+[3.209010] (-) TimerEvent: {}
+[3.309714] (-) TimerEvent: {}
+[3.410090] (-) TimerEvent: {}
+[3.510489] (-) TimerEvent: {}
+[3.610876] (-) TimerEvent: {}
+[3.711234] (-) TimerEvent: {}
+[3.811589] (-) TimerEvent: {}
+[3.911969] (-) TimerEvent: {}
+[4.012416] (-) TimerEvent: {}
+[4.112769] (-) TimerEvent: {}
+[4.213126] (-) TimerEvent: {}
+[4.313499] (-) TimerEvent: {}
+[4.413857] (-) TimerEvent: {}
+[4.514289] (-) TimerEvent: {}
+[4.614638] (-) TimerEvent: {}
+[4.715009] (-) TimerEvent: {}
+[4.815410] (-) TimerEvent: {}
+[4.915792] (-) TimerEvent: {}
+[5.016217] (-) TimerEvent: {}
+[5.116579] (-) TimerEvent: {}
+[5.216943] (-) TimerEvent: {}
+[5.317301] (-) TimerEvent: {}
+[5.417659] (-) TimerEvent: {}
+[5.518012] (-) TimerEvent: {}
+[5.618386] (-) TimerEvent: {}
+[5.718739] (-) TimerEvent: {}
+[5.819189] (-) TimerEvent: {}
+[5.919565] (-) TimerEvent: {}
+[6.019912] (-) TimerEvent: {}
+[6.120316] (-) TimerEvent: {}
+[6.223190] (-) TimerEvent: {}
+[6.324126] (-) TimerEvent: {}
+[6.424458] (-) TimerEvent: {}
+[6.524835] (-) TimerEvent: {}
+[6.625263] (-) TimerEvent: {}
+[6.725674] (-) TimerEvent: {}
+[6.826020] (-) TimerEvent: {}
+[6.926391] (-) TimerEvent: {}
+[7.026727] (-) TimerEvent: {}
+[7.127100] (-) TimerEvent: {}
+[7.227468] (-) TimerEvent: {}
+[7.327860] (-) TimerEvent: {}
+[7.428199] (-) TimerEvent: {}
+[7.528524] (-) TimerEvent: {}
+[7.628862] (-) TimerEvent: {}
+[7.729177] (-) TimerEvent: {}
+[7.829504] (-) TimerEvent: {}
+[7.929887] (-) TimerEvent: {}
+[8.030236] (-) TimerEvent: {}
+[8.130539] (-) TimerEvent: {}
+[8.230938] (-) TimerEvent: {}
+[8.331303] (-) TimerEvent: {}
+[8.431624] (-) TimerEvent: {}
+[8.531967] (-) TimerEvent: {}
+[8.632322] (-) TimerEvent: {}
+[8.732668] (-) TimerEvent: {}
+[8.832978] (-) TimerEvent: {}
+[8.933345] (-) TimerEvent: {}
+[9.033743] (-) TimerEvent: {}
+[9.134109] (-) TimerEvent: {}
+[9.234471] (-) TimerEvent: {}
+[9.334809] (-) TimerEvent: {}
+[9.435152] (-) TimerEvent: {}
+[9.535472] (-) TimerEvent: {}
+[9.635816] (-) TimerEvent: {}
+[9.736128] (-) TimerEvent: {}
+[9.836500] (-) TimerEvent: {}
+[9.936805] (-) TimerEvent: {}
+[10.037184] (-) TimerEvent: {}
+[10.137711] (-) TimerEvent: {}
+[10.238030] (-) TimerEvent: {}
+[10.338414] (-) TimerEvent: {}
+[10.438701] (-) TimerEvent: {}
+[10.539016] (-) TimerEvent: {}
+[10.639328] (-) TimerEvent: {}
+[10.739729] (-) TimerEvent: {}
+[10.840109] (-) TimerEvent: {}
+[10.940461] (-) TimerEvent: {}
+[11.040862] (-) TimerEvent: {}
+[11.141279] (-) TimerEvent: {}
+[11.241614] (-) TimerEvent: {}
+[11.342100] (-) TimerEvent: {}
+[11.442645] (-) TimerEvent: {}
+[11.542958] (-) TimerEvent: {}
+[11.643312] (-) TimerEvent: {}
+[11.743648] (-) TimerEvent: {}
+[11.843978] (-) TimerEvent: {}
+[11.945161] (-) TimerEvent: {}
+[12.045663] (-) TimerEvent: {}
+[12.146009] (-) TimerEvent: {}
+[12.246326] (-) TimerEvent: {}
+[12.346766] (-) TimerEvent: {}
+[12.447388] (-) TimerEvent: {}
+[12.547723] (-) TimerEvent: {}
+[12.648213] (-) TimerEvent: {}
+[12.748993] (-) TimerEvent: {}
+[12.849737] (-) TimerEvent: {}
+[12.950364] (-) TimerEvent: {}
+[13.051166] (-) TimerEvent: {}
+[13.151993] (-) TimerEvent: {}
+[13.252328] (-) TimerEvent: {}
+[13.352847] (-) TimerEvent: {}
+[13.410782] (my_cpp_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable number_counter\x1b[0m\n'}
+[13.453133] (-) TimerEvent: {}
+[13.553854] (-) TimerEvent: {}
+[13.654902] (-) TimerEvent: {}
+[13.755415] (-) TimerEvent: {}
+[13.856384] (-) TimerEvent: {}
+[13.959846] (-) TimerEvent: {}
+[14.060278] (-) TimerEvent: {}
+[14.160736] (-) TimerEvent: {}
+[14.261155] (-) TimerEvent: {}
+[14.361771] (-) TimerEvent: {}
+[14.432648] (my_cpp_pkg) StdoutLine: {'line': b'[100%] Built target number_counter\n'}
+[14.454489] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[14.455850] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'install'}
+[14.461896] (-) TimerEvent: {}
+[14.474818] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg'], 'cwd': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2901-1-sushant-ros_TIME1363026', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sushant-ros', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/sushant-ros', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2610', 'SYSTEMD_EXEC_PID': '2901', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', '_CONDA_ROOT': '/home/sushant-ros/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '5977', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/sushant-ros/agri_bot_ws/install:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sushant-ros', 'JOURNAL_STREAM': '9:19975', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sushant-ros', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/home/sushant-ros/miniconda3/condabin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/sushant-ros:@/tmp/.ICE-unix/2863,unix/sushant-ros:/tmp/.ICE-unix/2863', 'INVOCATION_ID': '409e5fd3092949cb945c0d6f2e6101db', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.A2WNG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg:/home/sushant-ros/agri_bot_ws/install/agri_bot_navigation:/home/sushant-ros/agri_bot_ws/install/agri_bot_description:/home/sushant-ros/agri_bot_ws/install/agri_bot_control:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/sushant-ros/miniconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:defdb207-bab8-498a-b8ba-8defb574afe0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', '_CONDA_EXE': '/home/sushant-ros/miniconda3/bin/conda', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/sushant-ros/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg:/home/sushant-ros/agri_bot_ws/install/agri_bot_navigation:/home/sushant-ros/agri_bot_ws/install/agri_bot_description:/home/sushant-ros/agri_bot_ws/install/agri_bot_control:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy'}), 'shell': False}
+[14.490244] (my_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.493691] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node\n'}
+[14.496385] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node_oop\n'}
+[14.498170] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station\n'}
+[14.499803] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone\n'}
+[14.501115] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_publisher\n'}
+[14.502772] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter\n'}
+[14.509944] (my_cpp_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter" to ""\n'}
+[14.510458] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg\n'}
+[14.510903] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg\n'}
+[14.511399] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[14.511608] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[14.511814] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh\n'}
+[14.511993] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv\n'}
+[14.512198] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash\n'}
+[14.512373] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh\n'}
+[14.512738] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh\n'}
+[14.512956] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv\n'}
+[14.513162] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv\n'}
+[14.513380] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg\n'}
+[14.513531] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake\n'}
+[14.513638] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake\n'}
+[14.513747] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml\n'}
+[14.517385] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[14.540874] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 0}
+[14.542190] (-) EventReactorShutdown: {}
