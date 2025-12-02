@@ -1,1 +1,0 @@
-/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_py_pkg/setup.py

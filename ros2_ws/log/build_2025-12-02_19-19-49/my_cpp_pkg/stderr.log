@@ -1,0 +1,32 @@
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:15:47:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc[m[K’ in namespace ‘[01m[Kexample_interfaces[m[K’ does not name a type; did you mean ‘[01m[Ksrv[m[K’?
+   15 |                     const example_interfaces::[01;31m[Ksrc[m[K::AddTwoInts::Response::SharedPtr response)
+      |                                               [01;31m[K^~~[m[K
+      |                                               [32m[Ksrv[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:15:62:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   15 |                     const example_interfaces::src::AddTwoInts[01;31m[K::[m[KResponse::SharedPtr response)
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:15:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   15 |                     const example_interfaces::src::AddTwoInts[01;31m[K:[m[K[32m[K:[m[KResponse::SharedPtr response)
+      |                                                              [01;31m[K^[m[K[32m[K~[m[K
+      |                                                              [32m[K)[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:14:31:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   14 |         void calbackAddTwoInts[01;36m[K([m[Kconst example_interfaces::srv::AddTwoInts::Request::SharedPtr request,
+      |                               [01;36m[K^[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:15:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   15 |                     const example_interfaces::src::[01;31m[KAddTwoInts[m[K::Response::SharedPtr response)
+      |                                                    [01;31m[K^~~~~~~~~~[m[K
+      |                                                              [32m[K;[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:15:64:[m[K [01;31m[Kerror: [m[K‘[01m[KResponse[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   15 |                     const example_interfaces::src::AddTwoInts::[01;31m[KResponse[m[K::SharedPtr response)
+      |                                                                [01;31m[K^~~~~~~~[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:22:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   22 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:[m[K In constructor ‘[01m[KAddTwoIntsServerNode::[01;32m[KAddTwoIntsServerNode[m[K()[m[K’:
+[01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:10:128:[m[K [01;31m[Kerror: [m[K‘[01m[KcallbackAddTwoInts[m[K’ is not a member of ‘[01m[KAddTwoIntsServerNode[m[K’
+   10 |             server_=this->create_service<example_interfaces::srv::AddTwoInts>("add_two_ints", std::bind(&AddTwoIntsServerNode::[01;31m[KcallbackAddTwoInts[m[K, this , _1, _2));
+      |                                                                                                                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/add_two_ints_server.dir/build.make:76: CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/add_two_ints_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

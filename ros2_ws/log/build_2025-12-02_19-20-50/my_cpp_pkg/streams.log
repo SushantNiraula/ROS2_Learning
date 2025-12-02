@@ -1,0 +1,20 @@
+[0.064s] Invoking command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg -- -j8 -l8
+[0.277s] [ 14%] Built target cpp_node_oop
+[0.285s] [ 28%] Built target cpp_node
+[0.300s] [ 42%] Built target robot_news_station
+[0.301s] [ 57%] Built target number_counter
+[0.306s] [ 71%] Built target smartphone
+[0.321s] [ 78%] [32mBuilding CXX object CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o[0m
+[0.322s] [ 92%] Built target number_publisher
+[4.732s] [01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:22:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[4.733s]    22 | }
+[4.733s]       |  [01;31m[K^[m[K
+[4.733s]       |  [32m[K;[m[K
+[4.733s] [01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:[m[K In constructor ‘[01m[KAddTwoIntsServerNode::[01;32m[KAddTwoIntsServerNode[m[K()[m[K’:
+[4.733s] [01m[K/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:10:128:[m[K [01;31m[Kerror: [m[K‘[01m[KcallbackAddTwoInts[m[K’ is not a member of ‘[01m[KAddTwoIntsServerNode[m[K’
+[4.733s]    10 |             server_=this->create_service<example_interfaces::srv::AddTwoInts>("add_two_ints", std::bind(&AddTwoIntsServerNode::[01;31m[KcallbackAddTwoInts[m[K, this , _1, _2));
+[4.733s]       |                                                                                                                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.823s] gmake[2]: *** [CMakeFiles/add_two_ints_server.dir/build.make:76: CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o] Error 1
+[5.824s] gmake[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/add_two_ints_server.dir/all] Error 2
+[5.824s] gmake: *** [Makefile:146: all] Error 2
+[5.828s] Invoked command in '/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sushant-ros/Coding/ROS2_Learning/ROS2_Basics/ros2_ws/build/my_cpp_pkg -- -j8 -l8
